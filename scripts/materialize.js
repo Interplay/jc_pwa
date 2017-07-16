@@ -13,8 +13,7 @@ if (typeof(jQuery) === 'undefined') {
   } else {
     jQuery = $;
   }
-}
-;/*
+};/*
  * jQuery Easing v1.4.0 - http://gsgd.co.uk/sandbox/jquery/easing/
  * Open source under the BSD License.
  * Copyright © 2008 George McGinley Smith
@@ -3033,10 +3032,6 @@ if (jQuery) {
       $(this).siblings('label, .prefix').addClass('active');
     });
 
-     $(document).ready(function(){
-        $('.carousel').carousel();
-    });
-     
     $(document).on('blur', input_selector, function () {
       var $inputElement = $(this);
       var selector = ".prefix";
@@ -7010,7 +7005,9 @@ DatePicker.prototype.deactivate = function( type, datesToDisable ) {
     // Return the updated collection.
     return disabledItems
 } //DatePicker.prototype.deactivate
-
+// $(document).ready(function(){
+//       $('.carousel').carousel();
+//     });
 
 /**
  * Mark a collection of dates as “enabled”.
@@ -7479,6 +7476,15 @@ return _.node(
 } //DatePicker.prototype.nodes
 
 
+
+	// $(document).ready(function(){
+	// $('.carousel').carousel({
+ //    onShow: function() {
+ //      $('.carousel').carousel();
+ //    }
+ // 	 })
+	// });
+    
 
 
 /**
@@ -8327,6 +8333,7 @@ Picker.extend( 'pickadate', DatePicker )
   $(document).ready(function(){
     $('input, textarea').characterCounter();
   });
+
 
 }( jQuery ));
 ;(function ($) {

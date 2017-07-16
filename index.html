@@ -19,204 +19,139 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+  <!-- <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J. Crew PWA</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
+  <link type="text/css" rel="stylesheet" href="styles/materialize.css"  media="screen,projection"/>
   <!-- Add to home screen for Safari on iOS -->
   <!-- TODO add manifest here -->
   
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Weather PWA">
-  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
-  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="apple-mobile-web-app-title" content="J Crew PWA">
+  <link rel="apple-touch-icon" href="images/icons/jc-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/jc-144x144.png">
   <meta name="msapplication-TileColor" content="#2F3BA2">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="/manifest.json">
 </head>
 <body>
 
   <header class="header">
-    <h1 class="header__title">J. Crew PWA</h1>
-    <button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-    <button id="butAdd" class="headerButton" aria-label="Add"></button>
+     <h1 class="header__title">J. Crew PWA</h1>
+    <!--<button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
+    <button id="butAdd" class="headerButton" aria-label="Add"></button> -->
+    
+    <!-- <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+         
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav> -->
+
   </header>
 
   <main class="main">
 
-  <div class="container">
-      <div class="col m6">
-          <div class="card">
-            <i class=" close material-icons right black-text" style="padding-top: 2px;">close</i>
-            <!-- <i class="material-icons red-text left" style="padding-top: 2px;">check_circle</i> -->
-            <div class="card-image">
-              <img src="images/jc_fheader.jpg" height="256" width="256">  
-            </div>
-            <div class="card-content">
-            <span class="card-title">J Crew Style Guide</span>
-              <p>Select Season<p>            
-            
-            <div class="card-tabs">
-      <ul class="tabs tabs-fixed-width">
-        <li class="tab"><a class="active" href="#test4">Womens</a></li>
-        <li class="tab"><a href="#test5">Test 2</a></li>
-        <li class="tab"><a href="#test6">Test 3</a></li>
-      </ul>
-    </div>
-        <div class="card-content grey lighten-4">
-          <div id="test4">
-            <div class="carousel">
-                <a class="carousel-item" href="#one!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6990_WQ1993_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636"></a>
-                <a class="carousel-item" href="#two!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6433_GY6390_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636"></a>
-                <a class="carousel-item" href="#three!"><img src="https://i.s-jcrew.com/is/image/jcrew/G5912_PK6756_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636"></a>
-                <a class="carousel-item" href="#four!"><img src="https://i.s-jcrew.com/is/image/jcrew/G1445_KA0183_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636"></a>
-                <a class="carousel-item" href="#five!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6403_EG2880_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636"></a>
+<body>  
+
+  <!-- Nav Bar -->  
+
+    
+  <!-- Title Container -->
+  <div id ="appShell" class="container">
+
+            <div id="titleCard" class="col m6">
+                <div class="card">
+                   <div class="card-content " >
+                  <span class="card-title center-block">J Crew Style Guide</span>
+                    <p class="center-block">Select Season<p> 
+                      <div class="card-image">
+                        <img src="images/jc_fheader.jpg" height="256" width="256">  
+                      </div>
+                     <div class="womensStyleGuide"> 
+                    <button id="btnWomensStyleGuide" class="btn waves-effect waves-light" type="button">Womens Style Guide                        
+                      </button>
+                      </div> 
+                  </div>
                 </div>
-          </div>
-          <div id="test5">Test 2</div>
-          <div id="test6">Test 3</div>
+            </div>
+
+  
+            <div id="wSpringCard" class="card-small valign-wrapper" style="display: none;">
+              <div class="card-panel">
+                <span class="card-title valign center-block"><h1>Spring</h1></span>
+                  <div class="carousel carousel-slider">
+                        <a class="carousel-item" href="#one!"><img src="images/sp1.jpeg" height="156" width="156"></a>
+                        <a class="carousel-item" href="#two!"><img src="images/sp2.jpeg" height="156" width="156"></a>
+                        <a class="carousel-item" href="#three!"><img src="images/sp3.jpeg" height="156" width="156"></a>
+                        <a class="carousel-item" href="#four!"><img src="images/sp4.jpeg" height="156" width="156"></a>
+                        <a class="carousel-item" href="#five!"><img src="images/sp5.jpeg" height="156" width="156"></a>
+                  </div>
+              </div>
+            </div>                
+
+            <div id="wSummerCard" class="card-small valign-wrapper" style="display: none;">
+              <div class="card-panel">
+                <span class="card-title valign center-block"><h3>Summer</h3></span>
+                  <div class="carousel carousel-slider">
+                        <a class="carousel-item" href="#one!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6990_WQ1993_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#two!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6433_GY6390_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#three!"><img src="https://i.s-jcrew.com/is/image/jcrew/G5912_PK6756_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#four!"><img src="https://i.s-jcrew.com/is/image/jcrew/G1445_KA0183_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6403_EG2880_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                  </div>
+              </div>
+            </div>
+        
+        <div id="wFallCard" class="card-small valign-wrapper" style="display: none;">
+              <div class="card-panel">
+                <span class="card-title valign center-block"><h1>Fall</h1></span>
+                  <div class="carousel carousel-slider">
+                        <a class="carousel-item" href="#one!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6990_WQ1993_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#two!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6433_GY6390_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#three!"><img src="https://i.s-jcrew.com/is/image/jcrew/G5912_PK6756_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#four!"><img src="https://i.s-jcrew.com/is/image/jcrew/G1445_KA0183_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6403_EG2880_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                  </div>
+              </div>
         </div>
 
-            <!-- <div class="card-action">
-              <a href="#">This is a link</a>
-            </div> -->
-          </div>
-        </div>
-        </div>
-  </div>
-
-  <!-- <div class="carousel carousel-slider">
-    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
-    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
-    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
-    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
-  </div> -->
-    <!-- <div class="card cardTemplate weather-forecast" hidden>
-      <div class="city-key" hidden></div>
-      <div class="card-last-updated" hidden></div>
-      <div class="location"></div>
-      <div class="date"></div>
-      <div class="description"></div>
-      <div class="current">
-        <div class="visual">
-          <div class="icon"></div>
-          <div class="temperature">
-            <span class="value"></span><span class="scale">°F</span>
-          </div>
-        </div>
-        <div class="description">
-          <div class="humidity"></div>
-          <div class="wind">
-            <span class="value"></span>
-            <span class="scale">mph</span>
-            <span class="direction"></span>°
-          </div>
-          <div class="sunrise"></div>
-          <div class="sunset"></div>
-        </div>
-      </div>
-      <div class="future">
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </main>
-
-  <div class="dialog-container">
-    <div class="dialog">
-      <div class="dialog-title">Add new city</div>
-      <div class="dialog-body">
-        <select id="selectCityToAdd">
-          <!-- Values map to Yahoo Weather API Where On Earth Identifiers (WOEIDs).
-               https://developer.yahoo.com/weather/documentation.html#req -->
-          <option value="2357536">Austin, TX</option>
-          <option value="2367105">Boston, MA</option>
-          <option value="2379574">Chicago, IL</option>
-          <option value="2459115">New York, NY</option>
-          <option value="2475687">Portland, OR</option>
-          <option value="2487956">San Francisco, CA</option>
-          <option value="2490383">Seattle, WA</option>
-        </select>
-      </div>
-      <div class="dialog-buttons">
-        <button id="butAddCity" class="button">Add</button>
-        <button id="butAddCancel" class="button">Cancel</button>
-      </div>
-    </div>
-  </div>
+        <div id="wWinterCard" class="card-small valign-wrapper" style="display: none;">
+              <div class="card-panel">
+                <span class="card-title valign center-block"><h1>Winter</h1></span>
+                  <div class="carousel carousel-slider">
+                        <a class="carousel-item" href="#one!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6990_WQ1993_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#two!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6433_GY6390_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#three!"><img src="https://i.s-jcrew.com/is/image/jcrew/G5912_PK6756_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#four!"><img src="https://i.s-jcrew.com/is/image/jcrew/G1445_KA0183_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                        <a class="carousel-item" href="#five!"><img src="https://i.s-jcrew.com/is/image/jcrew/G6403_EG2880_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&wid=636&hei=636" height="156" width="156"></a>
+                  </div>
+              </div>
+            </div>
+                  
+</div>
+        
+  
+</body>
+  
 
   <!-- <div class="loader">
     <svg viewBox="0 0 32 32" width="32" height="32">
@@ -228,6 +163,11 @@
   <script src="scripts/app.js" async></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="scripts/materialize.js"></script>
+  
+  <!-- <script type="text/javascript" language="javascript">
+    $('.carousel').carousel();
+    $('.carousel-slider').slider({full_width: true});
+  </script> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.js" async></script> -->
 </body>
 </html>
