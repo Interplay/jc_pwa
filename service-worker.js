@@ -8,12 +8,12 @@ var cacheName = 'todoPWA-1.5'
 
 var filesToCache = [
     './',
-      '/index.html',
-      '/images/',
-      '/scripts/app.js',
-      '/styles/inline.css',
-      '/styles/materialize.css',
-      '/scripts/materialize.js'
+      './index.html',
+      './images/',
+      './scripts/app.js',
+      './styles/inline.css',
+      './styles/materialize.css',
+      './scripts/materialize.js'
 
 ]
 
