@@ -1,36 +1,17 @@
-<!--
- Copyright 2016 Google Inc.
- 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
- 
-      http://www.apache.org/licenses/LICENSE-2.0
- 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
+
 
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/"> -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>J. Crew PWA</title>
   <link rel="stylesheet" type="text/css" href="styles/inline.css">
   <link type="text/css" rel="stylesheet" href="styles/materialize.css"  media="screen,projection"/>
-  <!-- Add to home screen for Safari on iOS -->
-  <!-- TODO add manifest here -->
   
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -41,42 +22,17 @@
   <meta name="msapplication-TileColor" content="#2F3BA2">
   <link rel="manifest" href="/manifest.json">
 </head>
+
 <body>
 
   <header class="header">
      <h1 class="header__title">J. Crew PWA</h1>
-    <!--<button id="butRefresh" class="headerButton" aria-label="Refresh"></button>
-    <button id="butAdd" class="headerButton" aria-label="Add"></button> -->
-    
-    <!-- <ul id="dropdown1" class="dropdown-content">
-      <li><a href="#!">one</a></li>
-      <li><a href="#!">two</a></li>
-      <li class="divider"></li>
-      <li><a href="#!">three</a></li>
-    </ul>
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-         
-          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-        </ul>
-      </div>
-    </nav> -->
-
   </header>
 
   <main class="main">
+  
 
-<body>  
-
-  <!-- Nav Bar -->  
-
-    
-  <!-- Title Container -->
-  <div id ="appShell" class="container">
+<div id ="appShell" class="container">
 
             <div id="titleCard" class="col m6">
                 <div class="card valign-wrapper">
@@ -85,15 +41,15 @@
                       <div class="card-image">
                         <img src="images/jc_fheader.jpg" height="256" width="256">  
                       </div>
-                     <div class="womensStyleGuide"> 
-                    <button id="btnWomensStyleGuide" class="btn waves-effect waves-light valign center-block" type="button">Seasonal Style Guide</button>
+                     <div class="StyleGuide"> 
+                    <button id="btnStyleGuide" class="btn waves-effect waves-light valign center-block" type="button">Seasonal Style Guide</button>
                       </div> 
                   </div>
                 </div>
             </div>
 
   
-            <div id="wSpringCard" class="card-small valign-wrapper" style="display: none;">
+            <div id="styleSpringCard" class="card-small valign-wrapper" style="display: none;">
               <div class="card-panel">
                 <span class="card-title valign center-block"><h1>Spring</h1></span>
                   <div class="carousel carousel-slider">
@@ -106,7 +62,7 @@
               </div>
             </div>                
 
-            <div id="wSummerCard" class="card-small valign-wrapper" style="display: none;">
+            <div id="styleSummerCard" class="card-small valign-wrapper" style="display: none;">
               <div class="card-panel">
                 <span class="card-title valign center-block"><h3>Summer</h3></span>
                   <div class="carousel carousel-slider">
@@ -119,7 +75,7 @@
               </div>
             </div>
         
-        <div id="wFallCard" class="card-small valign-wrapper" style="display: none;">
+        <div id="styleFallCard" class="card-small valign-wrapper" style="display: none;">
               <div class="card-panel">
                 <span class="card-title valign center-block"><h1>Fall</h1></span>
                   <div class="carousel carousel-slider">
@@ -132,7 +88,7 @@
               </div>
         </div>
 
-        <div id="wWinterCard" class="card-small valign-wrapper" style="display: none;">
+        <div id="styleWinterCard" class="card-small valign-wrapper" style="display: none;">
               <div class="card-panel">
                 <span class="card-title valign center-block"><h1>Winter</h1></span>
                   <div class="carousel carousel-slider">
@@ -147,25 +103,9 @@
                   
 </div>
         
-  
-</body>
-  
-
-  <!-- <div class="loader">
-    <svg viewBox="0 0 32 32" width="32" height="32">
-      <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
-    </svg>
-  </div> -->
-
-  <!-- Uncomment the line below when ready to test with fake data -->
   <script src="scripts/app.js" async></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="scripts/materialize.js"></script>
   
-  <!-- <script type="text/javascript" language="javascript">
-    $('.carousel').carousel();
-    $('.carousel-slider').slider({full_width: true});
-  </script> -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.js" async></script> -->
 </body>
 </html>
