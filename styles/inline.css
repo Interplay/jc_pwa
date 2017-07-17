@@ -330,7 +330,7 @@ body {
     .weather-forecast .future .oneday .temp-low {
       color: #888; }
 
-.weather-forecast .icon {
+/*.weather-forecast .icon {
   background-repeat: no-repeat;
   background-size: contain; }
   .weather-forecast .icon.clear-day {
@@ -355,7 +355,7 @@ body {
     background-image: url("/images/partly-cloudy.png"); }
   .weather-forecast .icon.thunderstorms {
     background-image: url("/images/thunderstorm.png"); }
-
+*/
 @media (max-width: 450px) {
   .weather-forecast .date, .weather-forecast .description {
     font-size: 0.9em; }
@@ -369,7 +369,7 @@ body {
     height: 32px; } }
 
 .mdl-button {
-  background: transparent;
+  background: #f5f5f5;
   border: none;
   border-radius: 2px;
   color: black;
@@ -379,8 +379,8 @@ body {
   min-width: 64px;
   padding: 0 16px;
   display: inline-block;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 14px;
+  font-family: 'Rancho', cursive;
+  font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
