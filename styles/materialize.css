@@ -4711,6 +4711,9 @@ small {
 }
 
 .card-panel {
+  background: #abbaab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #abbaab, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #abbaab, #ffffff);
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
