@@ -6,7 +6,7 @@
   var app = {
   };
 
-  const applicationServerPublicKey = 'BFrYTB3gTNb0MdEJyTsyBCCwAFO408DEH_R5OydOUKwsDqpcZzI7YuDKl1b9HXqhEOzfXQyhh_RWgqHJn1r_AiQ';
+  const applicationServerPublicKey = 'BJFWvvJLduQRWigPzexgZtdxU78Bc2V7Doun9NBou81e2j4qWeWaD5BZgTmjP5k9l1GUYztZyiiRgbkl8qe8Ch4';
 
   const pushButton = document.querySelector('.js-push-btn');
 

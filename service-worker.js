@@ -100,11 +100,11 @@ self.addEventListener('push', function(event) {
   console.log('[Service Worker] Push Received.');
   console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
 
-  const title = 'TEST PUSH';
+  const title = 'J. Crew Sale!';
   const options = {
-    body: 'CLOTHES SALE!!!',
-    icon: 'images/wi4.jpeg',
-    badge: 'images/wi3.jpeg'
+    body: '40% OFF - SHOPSUMMER',
+    icon: 'images/jc_fheader.jpg',
+    badge: 'images/jc_fheader.jpg'
   };
 
   event.waitUntil(self.registration.showNotification(title, options));
