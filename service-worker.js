@@ -1,7 +1,7 @@
 
-var dataCacheName = 'TODOData-v1.1.4'
+var dataCacheName = 'JC-PWA-Data-Cache'
 
-var cacheName = 'todoPWA-1.5'
+var cacheName = 'JC-PWA-Cache'
 
 var filesToCache = [
     './',
@@ -70,3 +70,43 @@ self.addEventListener('fetch', function (e) {
              })
        )
 })
+
+function urlB64ToUint8Array(base64String) {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+}
+
+self.addEventListener('notificationclick', function(event) {
+  console.log('[Service Worker] Notification click Received.');
+
+  event.notification.close();
+
+  event.waitUntil(
+    clients.openWindow('https://www.jcrew.com/promo.jsp?sidecar=true')
+  );
+});
+
+self.addEventListener('push', function(event) {
+  console.log('[Service Worker] Push Received.');
+  console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
+
+  const title = 'TEST PUSH';
+  const options = {
+    body: 'CLOTHES SALE!!!',
+    icon: 'images/wi4.jpeg',
+    badge: 'images/wi3.jpeg'
+  };
+
+  event.waitUntil(self.registration.showNotification(title, options));
+});
+
